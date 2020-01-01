@@ -31,20 +31,34 @@
       
         <div class="animated fadeInLeft" style="animation-delay: 0.4s">
           <p class="my-4 text-gray-600 font-light hidden lg:block">
-            文章目录
+            目送飞鸿，手挥五弦；<br>俯仰自得，游心太玄。
           </p>
-          <div class="toc-container hidden lg:block">
-            <ul class="markdownIt-TOC">
-<li>
-<ul>
-<li><a href="#%E5%85%B3%E4%BA%8E%E6%9C%AC%E7%AB%99">🏠 关于本站</a></li>
-<li><a href="#%E5%8D%9A%E4%B8%BB%E6%98%AF%E8%B0%81">👨‍💻 博主是谁</a></li>
-<li><a href="#%E5%85%B4%E8%B6%A3%E7%88%B1%E5%A5%BD">⛹ 兴趣爱好</a></li>
-<li><a href="#%E8%81%94%E7%B3%BB%E6%88%91%E5%91%80">📬 联系我呀</a></li>
-</ul>
-</li>
-</ul>
-
+          <div class="animated fadeInLeft social-container hidden lg:block" style="animation-delay: 0.6s">
+            
+              
+            
+              
+                <a href="https://twitter.com/mei_samson" target="_blank" class="mr-4 text-xl text-gray-400 font-light hover:text-gray-900">
+                  <i class="remixicon-twitter-line"></i>
+                </a>
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
           </div>
         </div>
       
@@ -88,64 +102,34 @@
 </div>
 <div class="mask" onclick="closeMenu()">
 </div>
-      <div class="content-wrapper py-32 lg:p-8 lg:w-3/4 post-detail animated fadeIn">
-        <h1 class="text-3xl font-bold lg:mt-16">关于</h1>
-        <div class="text-sm text-gray-700 lg:my-8">
-          2020-01-01 / 1 min read
+      <div class="content-wrapper py-32 lg:p-8 lg:w-3/4">
+        <h2 class="text-lg text-gray-700 mb-8">
+          <i class="remixicon-bookmark-line"></i> 博客搭建
+        </h2>
+        
+  <section class="post-item md:flex pb-12 animated fadeIn" :style="{ 'animation-delay': `${0 * 0.2}s` }">
+    
+      <a href="https://hiilxuu.github.io/post/shi-yong-gridea-da-jian-ge-ren-bo-ke" class="feature-image-wrapper bg-gray-100 rounded-lg flex-shrink-0 mr-8 w-full h-56 h-32 md:w-56 md:h-40">
+        <div class="post-feature-image lazy w-full h-56 h-32 md:w-56 md:h-40" data-bg="'https://gitee.com/hiilxuu/pictures_bed/raw/master/uPic/Jietu20200101-194156@2x.png'">
         </div>
-        
-        <div class="post-content yue">
-          <blockquote>
-<p>欢迎来到我的个人博客，很高兴遇见你！🤝</p>
-</blockquote>
-<h2 id="关于本站">🏠 关于本站</h2>
-<p>这是一个记录博主个人关于工作、生活想法的小站，内容十分空洞无趣</p>
-<h2 id="博主是谁">👨‍💻 博主是谁</h2>
-<p>博主目前生活在北京，国企工作人员</p>
-<h2 id="兴趣爱好">⛹ 兴趣爱好</h2>
-<p>动漫，游戏</p>
-<h2 id="联系我呀">📬 联系我呀</h2>
-<p>可以follow我的<a href="https://twitter.com/mei_samson">twitter</a> （虽然还没有发过推文<br>
-也可以在评论区留言哦~</p>
+      </a>
+    
+    <div class="content">
+      <a href="https://hiilxuu.github.io/post/shi-yong-gridea-da-jian-ge-ren-bo-ke">
+        <h2 class="post-title text-xl font-extrabold mt-5 md:mt-0">使用Gridea搭建个人博客（一）：安装、主题及部署至Github</h2>
+      </a>
+      <div class="post-abstract text-gray-700 font-light my-4">
+        <p>搭建个人博客的教程网上已经有很多了，Gridea的教程看<a href="https://gridea.dev/docs/">官方文档</a>也足够了。这篇blog更多的是记录今天折腾了大半天的成果，以及留着以后备查吧~</p>
 
-        </div>
+      </div>
+      <div class="text-gray-400 text-sm font-light">2020-01-01 / 6 min read</div>
+    </div>
+  </section>
 
-        
-
-
-        <div class="flex justify-between py-8">
-          
-
-          
-        </div>
-
-        
-          
-            <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
-<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
-
-<div id="gitalk-container"></div>
-
-<script>
-
-  var gitalk = new Gitalk({
-    clientID: 'a1c0adde80fdbaef54f9',
-    clientSecret: '157fd5d963d7d2e4119fd8e167077949c9b2f95b',
-    repo: 'samsoncomments',
-    owner: 'hiilxuu',
-    admin: ['hiilxuu'],
-    id: (location.pathname).substring(0, 49),      // Ensure uniqueness and length less than 50
-    distractionFreeMode: false  // Facebook-like distraction free mode
-  })
-
-  gitalk.render('gitalk-container')
-
-</script>
-
-          
-
-          
-        
+        <div class="pagination-container animated fadeIn">
+  
+  
+</div>
 
       </div>
     </div>
