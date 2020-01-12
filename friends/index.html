@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
+    
     <meta charset="utf-8" />
 <title>
-    SamsonMei
+    友链 | SamsonMei
 </title>
 <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
 <meta http-equiv="x-dns-prefetch-control" content="on">
@@ -44,6 +45,7 @@
             </script>
             
                 
+    
 </head>
 <body>
     <div class="wrapper">
@@ -147,19 +149,48 @@
 
     }
 </script>
-        <div class="main">
-            <div class="container">
-                <div class="post-wrap tags">
+    <div class="main">
+        <div class="container">
+            <article class="post-wrap">
+                <header class="post-header">
+                    <h1 class="post-title zh">
+                        &#x53CB;&#x94FE;
+                    </h1>
+                    <h1 class="post-title en">
+                        Friends
+                    </h1>
+                </header>
+                <div class="post-content">
                     
-                    <a href="https://hiilxuu.github.io/tag/yULpFgEO8">
-                        <p class="post-title">
-                            <i class="fa fa-tags" aria-hidden="true"> 博客搭建</i>
-                        </p>
-                    </a>
+                    
                     
                 </div>
-            </div>
+            </article>
         </div>
+    </div>
+    
+    
+    <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+
+<div id="gitalk-container" style="width: 100%;max-width: 780px;margin: auto;"></div>
+
+<script>
+    var gitalk = new Gitalk({
+        clientID: 'a1c0adde80fdbaef54f9',
+        clientSecret: '157fd5d963d7d2e4119fd8e167077949c9b2f95b',
+        repo: 'samsoncomments',
+        owner: 'hiilxuu',
+        admin: ['hiilxuu'],
+        id: (location.pathname).substring(0, 49), // Ensure uniqueness and length less than 50
+        distractionFreeMode: false // Facebook-like distraction free mode
+    })
+
+    gitalk.render('gitalk-container')
+</script>
+    
+    
+    
     </div>
     
     <div id="player"></div>
@@ -228,6 +259,5 @@
                     CheckVersion();
                     console.log("\n %c \u26a1Theme:Chic Author's Blog:https://blog.itjoker.cn  Write By ITJoker  \n\n", "color: #ffffff; background: rgba(49, 49, 49, 0.85); padding:5px 0;border-radius:5px;");
                 </script>
-    </div>
-</body>
+    </body>
 </html>
