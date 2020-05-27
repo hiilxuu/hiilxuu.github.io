@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://hiilxuu.github.io</id>
     <title>SamsonMei</title>
-    <updated>2020-01-13T15:22:07.691Z</updated>
+    <updated>2020-05-27T13:55:05.235Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://hiilxuu.github.io"/>
     <link rel="self" href="https://hiilxuu.github.io/atom.xml"/>
@@ -12,8 +12,8 @@
     <rights>All rights reserved 2020, SamsonMei</rights>
     <entry>
         <title type="html"><![CDATA[使用Gridea搭建个人博客（一）：安装、主题及部署至Github]]></title>
-        <id>https://hiilxuu.github.io/post/shi-yong-gridea-da-jian-ge-ren-bo-ke</id>
-        <link href="https://hiilxuu.github.io/post/shi-yong-gridea-da-jian-ge-ren-bo-ke">
+        <id>https://hiilxuu.github.io/post/blogseting01</id>
+        <link href="https://hiilxuu.github.io/post/blogseting01">
         </link>
         <updated>2020-01-01T13:37:16.000Z</updated>
         <summary type="html"><![CDATA[<p>搭建个人博客的教程网上已经有很多了，Gridea的教程看<a href="https://gridea.dev/docs/">官方文档</a>也足够了。这篇blog更多的是记录今天折腾了大半天的成果，以及留着以后备查吧~</p>
