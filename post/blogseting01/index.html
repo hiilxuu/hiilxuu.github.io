@@ -1,147 +1,201 @@
+<!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>SamsonMei</title>
-<meta name="description" content="目送飞鸿，手挥五弦；<br>俯仰自得，游心太玄。" />
-<link rel="shortcut icon" href="https://hiilxuu.github.io/favicon.ico?v=1590587673579">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
-<link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+<title>
+    SamsonMei
+</title>
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+<meta http-equiv="x-dns-prefetch-control" content="on">
+<link rel="dns-prefetch" href="https://hiilxuu.github.io">
+<link rel="dns-prefetch" href="https://cdn.bootcss.com">
+<link rel="dns-prefetch" href="https://cdn.jsdelivr.net">
+<meta name="author" content="SamsonMei">
+<meta name="description" content="目送飞鸿，手挥五弦；俯仰自得，游心太玄。">
+<meta name="keywords" content="">
+<link rel="stylesheet" href="https://hiilxuu.github.io/media/css/style.min.css" />
+<link rel="stylesheet" href="https://hiilxuu.github.io/styles/main.css" />
+<link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
 
-<link rel="stylesheet" href="https://hiilxuu.github.io/styles/main.css">
+    <script src="https://cdn.jsdelivr.net/npm/aplayer@1.10.0/dist/APlayer.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer@1.10.0/dist/APlayer.min.css">
+    
+        <script type="text/javascript" src="https://apps.bdimg.com/libs/jquery/1.7.1/jquery.min.js"></script>
+        <script src="https://hiilxuu.github.io/media/script/tocbot.min.js"></script>
+        <script src="https://hiilxuu.github.io/media/script/script.min.js"></script>
+        <script src="https://hiilxuu.github.io/media/script/icon.min.js"></script>
+        <script src="https://cdn.bootcss.com/highlight.js/9.13.1/highlight.min.js"></script>
+        <link href="https://cdn.bootcss.com/highlight.js/9.13.1/styles/atelier-estuary-dark.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.10.1/dist/katex.min.css">
+        <script defer src="https://cdn.jsdelivr.net/npm/katex@0.10.1/dist/katex.min.js"></script>
+        
+            <script>
+                (function() {
+                    var bp = document.createElement('script');
+                    var curProtocol = window.location.protocol.split(':')[0];
+                    if (curProtocol === 'https') {
+                        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+                    } else {
+                        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+                    }
+                    var s = document.getElementsByTagName("script")[0];
+                    s.parentNode.insertBefore(bp, s);
+                })();
+            </script>
+            
+                
+</head>
 
+<body>
+    <div class="wrapper">
+        <header>
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-header header-logo">
+                <a href="https://hiilxuu.github.io">
+                    SamsonMei
+                </a>
+            </div>
+            <div class="menu navbar-right">
+                
+                    <a class="menu-item" href="/">
+                        首页
+                    </a>
+                    
+                    <a class="menu-item" href="/archives">
+                        归档
+                    </a>
+                    
+                    <a class="menu-item" href="/tags">
+                        标签
+                    </a>
+                    
+                    <a class="menu-item" href="/post/about">
+                        关于
+                    </a>
+                    
+                        <input id="switch_default" type="checkbox" class="switch_default">
+                        <label for="switch_default" class="toggleBtn"></label>
+            </div>
 
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-156063331-1"></script>
+        </div>
+    </nav>
+
+    
+        <nav class="navbar-mobile" id="nav-mobile">
+            <div class="container">
+                <div class="navbar-header">
+                    <div>
+                        <a href="https://hiilxuu.github.io">
+                            SamsonMei
+                        </a>
+                        <!--en-->
+                        <a id="mobile-toggle-theme-en" class="a en">&nbsp;Dark</a>
+                        <!--zh-->
+                        <a id="mobile-toggle-theme-zh" class="a zh">&nbsp;\u6697\u9ED1</a>
+                    </div>
+                    <!--en-->
+                    <div class="menu-toggle" id="menu-toggle-en" onclick="mobileBtn()">&#9776; Menu</div>
+                    <!--zh-->
+                    <div class="menu-toggle" id="menu-toggle-zh" onclick="mobileBtn()">&#9776; &#x83DC;&#x5355;</div>
+
+                </div>
+                <div class="menu" id="mobile-menu">
+                    
+                        <a class="menu-item" href="/">
+                            首页
+                        </a>
+                        
+                        <a class="menu-item" href="/archives">
+                            归档
+                        </a>
+                        
+                        <a class="menu-item" href="/tags">
+                            标签
+                        </a>
+                        
+                        <a class="menu-item" href="/post/about">
+                            关于
+                        </a>
+                        
+                </div>
+            </div>
+        </nav>
+</header>
 <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    var mobileBtn = function f() {
+        var toggleMenu = document.getElementById("menu-toggle-en");
+        var toggleMenu_zh = document.getElementById("menu-toggle-zh");
 
-  gtag('config', 'UA-156063331-1');
+        var mobileMenu = document.getElementById("mobile-menu");
+        if (toggleMenu.display != "none") {
+            if (toggleMenu.classList.contains("active")) {
+                toggleMenu.classList.remove("active")
+                mobileMenu.classList.remove("active")
+            } else {
+                toggleMenu.classList.add("active")
+                mobileMenu.classList.add("active")
+            }
+        } else if (toggleMenu_zh.display != "none") {
+            if (toggleMenu_zh.classList.contains("active")) {
+                toggleMenu_zh.classList.remove("active")
+                mobileMenu.classList.remove("active")
+            } else {
+                toggleMenu_zh.classList.add("active")
+                mobileMenu.classList.add("active")
+            }
+        }
+
+    }
 </script>
-
-
-  </head>
-  <body>
-    <div id="app" class="main px-4 flex flex-col lg:flex-row">
-      <div id="sidebar" class="sidebar-wrapper lg:static lg:w-1/4">
-  <div class="lg:sticky top-0">
-    <div class="sidebar-content">
-      <div class="flex lg:block p-4 lg:px-0 items-center fixed lg:static lg:block top-0 right-0 left-0 bg-white z-50">
-        <i class="ri-menu-2-line lg:mt-4 text-2xl cursor-pointer animated fadeIn" onclick="openMenu()"></i>
-        <a href="https://hiilxuu.github.io">
-          <img class="animated fadeInLeft avatar rounded-lg mx-4 lg:mt-32 lg:mx-0 mt-0 lg:w-24 lg:h-24 w-12 w-12" src="https://hiilxuu.github.io/images/avatar.png?v=1590587673579" alt="">
-        </a>
-        <h1 class="animated fadeInLeft lg:text-4xl font-extrabold lg:mt-8 mt-0 text-xl" style="animation-delay: 0.2s">SamsonMei</h1>
-      </div>
-      
-        <div class="animated fadeInLeft" style="animation-delay: 0.4s">
-          <p class="my-4 text-gray-600 font-light hidden lg:block">
-            文章目录
-          </p>
-          <div class="toc-container hidden lg:block">
-            <ul class="markdownIt-TOC">
-<li>
-<ul>
-<li><a href="#%E5%89%8D%E8%A8%80">前言</a></li>
-<li><a href="#%E5%AE%89%E8%A3%85git%E4%BB%A5%E5%8F%8Agridea">安装Git以及Gridea</a>
-<ul>
-<li><a href="#%E5%AE%89%E8%A3%85git">安装Git</a></li>
-<li><a href="#%E5%AE%89%E8%A3%85gridea">安装Gridea</a></li>
-</ul>
-</li>
-<li><a href="#%E4%B8%BB%E9%A2%98%E9%85%8D%E7%BD%AE">主题配置</a>
-<ul>
-<li><a href="#%E5%9F%BA%E7%A1%80%E9%85%8D%E7%BD%AE">基础配置</a>
-<ul>
-<li><a href="#%E9%80%89%E6%8B%A9%E4%B8%BB%E9%A2%98">选择主题</a></li>
-<li><a href="#%E7%BD%91%E7%AB%99%E5%90%8D%E7%A7%B0">网站名称</a></li>
-<li><a href="#%E7%BD%91%E7%AB%99%E6%8F%8F%E8%BF%B0">网站描述</a></li>
-<li><a href="#%E5%BA%95%E9%83%A8%E4%BF%A1%E6%81%AF">底部信息</a></li>
-<li><a href="#%E6%98%BE%E7%A4%BA%E5%B0%81%E9%9D%A2%E5%9B%BE">显示封面图</a></li>
-<li><a href="#%E6%AF%8F%E9%A1%B5%E6%96%87%E7%AB%A0%E6%95%B0%E4%B8%8E%E5%BD%92%E6%A1%A3%E6%95%B0">每页文章数与归档数</a></li>
-<li><a href="#url%E6%A0%BC%E5%BC%8F%E4%B8%8E%E8%B7%AF%E5%BE%84">URL格式与路径</a></li>
-<li><a href="#%E5%BD%92%E6%A1%A3%E8%B7%AF%E5%BE%84%E5%89%8D%E7%BC%80">归档路径前缀</a></li>
-<li><a href="#%E6%97%A5%E6%9C%9F%E6%A0%BC%E5%BC%8F">日期格式</a></li>
-<li><a href="#rss%E8%AE%BE%E7%BD%AE">RSS设置</a></li>
-</ul>
-</li>
-<li><a href="#%E8%87%AA%E5%AE%9A%E4%B9%89%E9%85%8D%E7%BD%AE">自定义配置</a>
-<ul>
-<li><a href="#%E7%A4%BE%E4%BA%A4">社交</a></li>
-<li><a href="#%E8%87%AA%E5%AE%9A%E4%B9%89%E6%A0%B7%E5%BC%8F">自定义样式</a></li>
-<li><a href="#%E8%B0%B7%E6%AD%8C%E7%BB%9F%E8%AE%A1">谷歌统计</a></li>
-</ul>
-</li>
-<li><a href="#%E7%BD%91%E9%A1%B5%E5%9B%BE%E6%A0%87%E5%92%8C%E5%A4%B4%E5%83%8F%E9%85%8D%E7%BD%AE">网页图标和头像配置</a></li>
-<li><a href="#%E9%A2%84%E8%A7%88">预览</a></li>
-</ul>
-</li>
-<li><a href="#%E8%BF%9C%E7%A8%8B%E9%85%8D%E7%BD%AE">远程配置</a>
-<ul>
-<li><a href="#%E6%B3%A8%E5%86%8C%E5%8F%8A%E9%85%8D%E7%BD%AEgithub">注册及配置Github</a></li>
-<li><a href="#gridea%E9%85%8D%E7%BD%AE">Gridea配置</a></li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-
-          </div>
-        </div>
-      
-    </div>
-  </div>
-</div>
-
-<div class="menu-container">
-  <i class="ri-arrow-left-line text-2xl cursor-pointer animated fadeIn close-menu-btn" onclick="closeMenu()"></i>
-  <div>
-    
-      
-        <a href="/" class="menu" style="animation-delay: 0s">
-          首页
-        </a>
-      
-    
-      
-        <a href="/archives" class="menu" style="animation-delay: 0.2s">
-          归档
-        </a>
-      
-    
-      
-        <a href="/tags" class="menu" style="animation-delay: 0.4s">
-          标签
-        </a>
-      
-    
-      
-        <a href="/post/about" class="menu" style="animation-delay: 0.6000000000000001s">
-          关于
-        </a>
-      
-    
-  </div>
-  <div class="site-footer">
-    <div class="py-4 text-gray-700">Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a><br><br>Copyright 2020 &copy <a href="https://twitter.com/mei_samson" target="_blank"><span style="color:blue">SamsonMei</span></a><br><br><a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="blank"<span style="color:orange">本博客采用 CC BY-NC-SA 4.0 进行许可</span></a></div>
-    <a class="rss" href="https://hiilxuu.github.io/atom.xml" target="_blank">RSS</a>
-  </div>
-</div>
-<div class="mask" onclick="closeMenu()">
-</div>
-      <div class="content-wrapper py-32 lg:p-8 lg:w-3/4 post-detail animated fadeIn">
-        <h1 class="text-3xl font-bold lg:mt-16">使用Gridea搭建个人博客（一）：安装、主题及部署至Github</h1>
-        <div class="text-sm text-gray-700 lg:my-8">
-          2020-01-01 / 6 min read
-        </div>
-        
-          <img class="post-feature-image rounded-lg mx-auto my-4" src="https://gitee.com/hiilxuu/pictures_bed/raw/master/uPic/Jietu20200101-194156@2x.png" alt="">
-        
-        <div class="post-content yue">
-          <p>搭建个人博客的教程网上已经有很多了，Gridea的教程看<a href="https://gridea.dev/docs/">官方文档</a>也足够了。这篇blog更多的是记录今天折腾了大半天的成果，以及留着以后备查吧~</p>
+            <div class="main">
+                <div class="container">
+                    <article class="post-wrap">
+                        <header class="post-header">
+                            <h1 class="post-title">
+                                使用Gridea搭建个人博客（一）：安装、主题及部署至Github
+                            </h1>
+                            <!--en-->
+                            <div class="post-meta en">
+                                Author:
+                                <a itemprop="author" rel="author" href="/">
+                                    SamsonMei
+                                </a>
+                                <span class="post-time">
+                                Date: <a href="#">2020-01-01</a>
+                            </span>
+                                <span class="post-readtime">Reading Time:<a href="#">5.8 mins</a></span>
+                                <span class="post-words">words:<a href="#">1595</a></span>
+                                
+                                    <span class="post-category">
+                                Category:
+                                
+                                <a href="https://hiilxuu.github.io/tag/yULpFgEO8">博客搭建</a>
+                                
+                            </span>
+                                    
+                            </div>
+                            <!--zh-->
+                            <div class="post-meta zh">
+                                &#x4F5C;&#x8005;:
+                                <a itemprop="author" rel="author" href="/">
+                                    SamsonMei
+                                </a>
+                                <span class="post-time">&#x65E5;&#x671F;: <a href="#">2020-01-01</a></span>
+                                <span class="post-readtime">&#x9605;&#x8BFB;&#x65F6;&#x95F4;:<a href="#">5.8 &#x5206;&#x949F;</a></span>
+                                <span class="post-words">&#x5B57;&#x6570;:<a href="#">1595</a></span>
+                                
+                                    <span class="post-category">&#x5206;&#x7C7B;:
+                                
+                                <a href="https://hiilxuu.github.io/tag/yULpFgEO8">博客搭建</a>
+                                
+                            </span>
+                                    
+                            </div>
+                        </header>
+                        <div class="post-content">
+                            <p>搭建个人博客的教程网上已经有很多了，Gridea的教程看<a href="https://gridea.dev/docs/">官方文档</a>也足够了。这篇blog更多的是记录今天折腾了大半天的成果，以及留着以后备查吧~</p>
 <!-- more -->
 <h2 id="前言">前言</h2>
 <p>之前也不是一个擅长输出的人，上学的时候，同学们往往在QQ空间、校内网、网易博客、百度博客等平台写字，而我从来没有下决心在哪个地方写点什么，虽然也随波逐流的注册了一些平台，偶尔写些不痛不痒的短文。真正想着找一块自己的地方还是在2017年，换了工作、换了生活的城市，用Hexo+Github搭建了个人博客，但却没有坚持下来。当时沉迷于设置模板，NexT主题设置花费了不少时间，真正文章却没写多少……</p>
@@ -227,149 +281,231 @@ Copyright 2020 &amp;copy
 需要注意的是，域名前要加上<code>https://</code>；分支为<code>master</code><br>
 保存后，点击“检测远程连接”，没有问题的话，点击左侧“同步”就部署到远程啦~</p>
 
-        </div>
+                        </div>
+                        <div class="post-toc">
+                            <ul class="markdownIt-TOC">
+<li>
+<ul>
+<li><a href="#%E5%89%8D%E8%A8%80">前言</a></li>
+<li><a href="#%E5%AE%89%E8%A3%85git%E4%BB%A5%E5%8F%8Agridea">安装Git以及Gridea</a>
+<ul>
+<li><a href="#%E5%AE%89%E8%A3%85git">安装Git</a></li>
+<li><a href="#%E5%AE%89%E8%A3%85gridea">安装Gridea</a></li>
+</ul>
+</li>
+<li><a href="#%E4%B8%BB%E9%A2%98%E9%85%8D%E7%BD%AE">主题配置</a>
+<ul>
+<li><a href="#%E5%9F%BA%E7%A1%80%E9%85%8D%E7%BD%AE">基础配置</a>
+<ul>
+<li><a href="#%E9%80%89%E6%8B%A9%E4%B8%BB%E9%A2%98">选择主题</a></li>
+<li><a href="#%E7%BD%91%E7%AB%99%E5%90%8D%E7%A7%B0">网站名称</a></li>
+<li><a href="#%E7%BD%91%E7%AB%99%E6%8F%8F%E8%BF%B0">网站描述</a></li>
+<li><a href="#%E5%BA%95%E9%83%A8%E4%BF%A1%E6%81%AF">底部信息</a></li>
+<li><a href="#%E6%98%BE%E7%A4%BA%E5%B0%81%E9%9D%A2%E5%9B%BE">显示封面图</a></li>
+<li><a href="#%E6%AF%8F%E9%A1%B5%E6%96%87%E7%AB%A0%E6%95%B0%E4%B8%8E%E5%BD%92%E6%A1%A3%E6%95%B0">每页文章数与归档数</a></li>
+<li><a href="#url%E6%A0%BC%E5%BC%8F%E4%B8%8E%E8%B7%AF%E5%BE%84">URL格式与路径</a></li>
+<li><a href="#%E5%BD%92%E6%A1%A3%E8%B7%AF%E5%BE%84%E5%89%8D%E7%BC%80">归档路径前缀</a></li>
+<li><a href="#%E6%97%A5%E6%9C%9F%E6%A0%BC%E5%BC%8F">日期格式</a></li>
+<li><a href="#rss%E8%AE%BE%E7%BD%AE">RSS设置</a></li>
+</ul>
+</li>
+<li><a href="#%E8%87%AA%E5%AE%9A%E4%B9%89%E9%85%8D%E7%BD%AE">自定义配置</a>
+<ul>
+<li><a href="#%E7%A4%BE%E4%BA%A4">社交</a></li>
+<li><a href="#%E8%87%AA%E5%AE%9A%E4%B9%89%E6%A0%B7%E5%BC%8F">自定义样式</a></li>
+<li><a href="#%E8%B0%B7%E6%AD%8C%E7%BB%9F%E8%AE%A1">谷歌统计</a></li>
+</ul>
+</li>
+<li><a href="#%E7%BD%91%E9%A1%B5%E5%9B%BE%E6%A0%87%E5%92%8C%E5%A4%B4%E5%83%8F%E9%85%8D%E7%BD%AE">网页图标和头像配置</a></li>
+<li><a href="#%E9%A2%84%E8%A7%88">预览</a></li>
+</ul>
+</li>
+<li><a href="#%E8%BF%9C%E7%A8%8B%E9%85%8D%E7%BD%AE">远程配置</a>
+<ul>
+<li><a href="#%E6%B3%A8%E5%86%8C%E5%8F%8A%E9%85%8D%E7%BD%AEgithub">注册及配置Github</a></li>
+<li><a href="#gridea%E9%85%8D%E7%BD%AE">Gridea配置</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
 
-        
-          <a class="animated fadeInUp p-2 items-center text-sm text-gray-700 border hover:bg-gray-300 leading-none rounded-full flex lg:inline-flex m-4 " href="https://hiilxuu.github.io/tag/yULpFgEO8">
-            <span class="flex-auto">博客搭建</span>
-          </a>
-        
+                        </div>
+                        <section class="post-copyright en">
+                            <!--en-->
+                            <p class="copyright-item">
+                                <span>Author:</span>
+                                <span>SamsonMei</span>
+                            </p>
 
+                            <p class="copyright-item">
+                                <span>Permalink:</span>
+                                <span><a href="https://hiilxuu.github.io/post/blogseting01">https://hiilxuu.github.io/post/blogseting01</a></span>
+                            </p>
 
-        <div class="flex justify-between py-8">
-          
+                            <p class="copyright-item">
+                                <span>License:</span>
+                                <span>MIT License</span>
+                            </p>
+                        </section>
+                        <section class="post-copyright zh">
+                            <!--zh-->
+                            <p class="copyright-item ">
+                                <span>&#x4F5C;&#x8005;:</span>
+                                <span>SamsonMei</span>
+                            </p>
 
-          
-        </div>
+                            <p class="copyright-item">
+                                <span>&#x6C38;&#x4E45;&#x94FE;&#x63A5;:</span>
+                                <span><a href="https://hiilxuu.github.io/post/blogseting01">https://hiilxuu.github.io/post/blogseting01</a></span>
+                            </p>
 
-        
-          
-            <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+                            <p class="copyright-item">
+                                <span>&#x534F;&#x8BAE;:</span>
+                                <span>MIT License</span>
+                            </p>
+                        </section>
+                        <!--en-->
+                        <section class="post-tags en">
+                            <div>
+                                <span>Tag(s):</span>
+                                <span class="tag">
+                                
+                                
+                                <a href="https://hiilxuu.github.io/tag/yULpFgEO8"># 博客搭建</a>
+                                
+                                
+                            </span>
+                            </div>
+                            <div>
+                                <a href="javascript:window.history.back();">back</a>
+                                <span>&dot;</span>
+                                <a href="#">home</a>
+                            </div>
+                        </section>
+                        <!--zh-->
+                        <section class="post-tags zh">
+                            <div>
+                                <span>&#x6807;&#x7B7E;:</span>
+                                <span class="tag">
+                                
+                                
+                                <a href="https://hiilxuu.github.io/tag/yULpFgEO8"># 博客搭建</a>
+                                
+                                
+                            </span>
+                            </div>
+                            <div>
+                                <a href="javascript:window.history.back();">
+                                &#x8FD4;&#x56DE;</a>
+                                <span>&dot;</span>
+                                <a href="#">&#x4E3B;&#x9875;</a>
+                            </div>
+                        </section>
+                        <section class="post-nav">
+                            
+                                    
+                        </section>
+                    </article>
+                </div>
+                
+                    
+                        <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
 <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
 
-<div id="gitalk-container"></div>
+<div id="gitalk-container" style="width: 100%;max-width: 780px;margin: auto;"></div>
 
 <script>
-
-  var gitalk = new Gitalk({
-    clientID: 'a1c0adde80fdbaef54f9',
-    clientSecret: '157fd5d963d7d2e4119fd8e167077949c9b2f95b',
-    repo: 'samsoncomments',
-    owner: 'hiilxuu',
-    admin: ['hiilxuu'],
-    id: (location.pathname).substring(0, 49),      // Ensure uniqueness and length less than 50
-    distractionFreeMode: false  // Facebook-like distraction free mode
-  })
-
-  gitalk.render('gitalk-container')
-
-</script>
-
-          
-
-          
-        
-
-      </div>
-    </div>
-
-    <script src="https://hiilxuu.github.io/media/prism.js"></script>  
-<script>
-
-Prism.highlightAll()
-let mainNavLinks = document.querySelectorAll(".markdownIt-TOC a");
-
-// This should probably be throttled.
-// Especially because it triggers during smooth scrolling.
-// https://lodash.com/docs/4.17.10#throttle
-// You could do like...
-// window.addEventListener("scroll", () => {
-//    _.throttle(doThatStuff, 100);
-// });
-// Only not doing it here to keep this Pen dependency-free.
-
-window.addEventListener("scroll", event => {
-  let fromTop = window.scrollY;
-
-  mainNavLinks.forEach((link, index) => {
-    let section = document.getElementById(decodeURI(link.hash).substring(1));
-    let nextSection = null
-    if (mainNavLinks[index + 1]) {
-      nextSection = document.getElementById(decodeURI(mainNavLinks[index + 1].hash).substring(1));
-    }
-    if (section.offsetTop <= fromTop) {
-      if (nextSection) {
-        if (nextSection.offsetTop > fromTop) {
-          link.classList.add("current");
-        } else {
-          link.classList.remove("current");    
-        }
-      } else {
-        link.classList.add("current");
-      }
-    } else {
-      link.classList.remove("current");
-    }
-  });
-});
-
-
-document.addEventListener("DOMContentLoaded", function() {
-  var lazyImages = [].slice.call(document.querySelectorAll(".post-feature-image.lazy"));
-
-  if ("IntersectionObserver" in window) {
-    let lazyImageObserver = new IntersectionObserver(function(entries, observer) {
-      entries.forEach(function(entry) {
-        if (entry.isIntersecting) {
-          let lazyImage = entry.target
-          lazyImage.style.backgroundImage = `url(${lazyImage.dataset.bg})`
-          lazyImage.classList.remove("lazy")
-          lazyImageObserver.unobserve(lazyImage)
-        }
-      });
-    });
-
-    lazyImages.forEach(function(lazyImage) {
-      lazyImageObserver.observe(lazyImage)
+    var gitalk = new Gitalk({
+        clientID: 'a1c0adde80fdbaef54f9',
+        clientSecret: '157fd5d963d7d2e4119fd8e167077949c9b2f95b',
+        repo: 'samsoncomments',
+        owner: 'hiilxuu',
+        admin: ['hiilxuu'],
+        id: (location.pathname).substring(0, 49), // Ensure uniqueness and length less than 50
+        distractionFreeMode: false // Facebook-like distraction free mode
     })
-  } else {
-    // Possibly fall back to a more compatible method here
-  }
-});
 
-const menuContainer = document.querySelector('.menu-container')
-const menus = document.querySelectorAll('.menu-container .menu')
-const mask = document.querySelector('.mask')
-const contentWrapper = document.querySelector('.content-wrapper')
-const latestArticle = document.querySelector('.latest-article')
-const readMore = document.querySelector('.read-more')
-const indexPage = document.querySelector('.index-page')
-
-const isHome = location.pathname === '/'
-if (latestArticle) {
-  latestArticle.style.display = isHome ? 'block' : 'none'
-  readMore.style.display = isHome ? 'block' : 'none'
-  indexPage.style.display = isHome ? 'none' : 'block'
-}
-
-const openMenu = () => {
-  menuContainer.classList.add('open')
-  menus.forEach(menu => {
-    menu.classList.add('animated', 'fadeInLeft')
-  })
-  mask.classList.add('open')
-  contentWrapper.classList.add('is-second')
-}
-
-const closeMenu = () => {
-  menuContainer.classList.remove('open')
-  menus.forEach(menu => {
-    menu.classList.remove('animated', 'fadeInLeft')
-  })
-  mask.classList.remove('open')
-  contentWrapper.classList.remove('is-second')
-}
+    gitalk.render('gitalk-container')
 </script>
-  
-  </body>
+                            
+                                
+                                            
+            </div>
+    </div>
+    </div>
+    </div>
+    
+    <div id="player"></div>
+    
+        <footer id="footer" class="footer">
+
+            <div class="copyright">
+                
+                Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a><br><br>Copyright 2020 &copy <a href="https://twitter.com/mei_samson" target="_blank"><span style="color:blue">SamsonMei</span></a><br><br><a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="blank"<span style="color:orange">本博客采用 CC BY-NC-SA 4.0 进行许可</span></a>
+                    <b id="hitokoto"></b><br>
+                    <svg viewBox="0 0 1024 1024" style="margin-left: 5px;margin-right: 5px;" version="1.0" width="8" height="8" class="my-face">
+            <path
+                d="M863.597631 513.574282l-271.33965-140.213484L729.783667 81.926656c3.583731-7.87141 7.167462-15.742819 7.167462-25.214109C736.887134 25.226908 708.345275 0.012799 672.635953 0.012799a63.611229 63.611229 0 0 0-39.293053 12.607055c-1.791866 1.59988-3.519736 3.19976-5.311602 3.19976L147.87531 418.925381a55.547834 55.547834 0 0 0-19.646527 47.356448c1.791866 17.278704 14.27093 33.021523 32.125591 42.492813l271.33965 141.749369L292.504463 945.221908c-12.479064 25.214109-1.791866 53.563983 23.166262 69.306802 10.751194 6.335525 23.230258 9.47129 35.709322 9.47129 16.062795 0 32.125591-4.735645 44.604655-15.742819l480.091993-403.297753a55.547834 55.547834 0 0 0 19.646526-47.228458 61.243407 61.243407 0 0 0-32.12559-44.156688z"
+                fill="#93b5cf"></path>
+        </svg>
+                    SamsonMei &copy;Copyright
+                        <script>
+                            var date = new Date();
+                            document.write("" + date.getFullYear());
+                        </script>
+                        | Powered by <a href="https://coding.net" target="_blank">Coding.net</a>
+            </div>
+            <div id="update" style="display:none;">
+                on
+            </div>
+            
+                <div id="version" style="display:none;">
+                    1.5.7
+                </div>
+                
+                    <script>
+                        var pat = '';
+                        
+                        document.write('<div id="home_path" style="display:none;">' + document.location.protocol + '//' + window.document.location.hostname + pat + '</div>')
+                    </script>
+
+        </footer>
+        
+                <script>
+                    
+
+                    function LoadPlayer() {
+                        var audio_name = '';
+                        var audio_artist = '';
+                        var audio_url = '';
+                        var audio_cover = '';
+                        const ap = new APlayer({
+                            container: document.getElementById('player'),
+                            fixed: true,
+                            audio: [{
+                                name: audio_name,
+                                artist: audio_artist,
+                                url: audio_url,
+                                cover: audio_cover,
+                            }]
+                        });
+
+                    }
+                    LoadPlayer();
+                    
+                    
+                    hitokoto();
+                    getStar();
+                    hljs.initHighlighting();
+                    //console.clear();
+                    CheckVersion();
+                    console.log("\n %c \u26a1Theme:Chic Author's Blog:https://blog.itjoker.cn  Write By ITJoker  \n\n", "color: #ffffff; background: rgba(49, 49, 49, 0.85); padding:5px 0;border-radius:5px;");
+                </script>
+        </div>
+</body>
+<script>
+    scroll();
+</script>
+
 </html>
